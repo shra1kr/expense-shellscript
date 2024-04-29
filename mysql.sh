@@ -31,7 +31,7 @@ else
 fi
 
 
-dnf install mysql -y &>>$LOGFILE
+dnf install mysql-server -y &>>$LOGFILE
 VALIDATE $? "Installing MySQL Server"
 
 systemctl enable mysqld &>>$LOGFILE
